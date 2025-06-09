@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #000000;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #e23744;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('https://source.unsplash.com/1600x600/?food,restaurant') no-repeat center/cover;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero input {
+  padding: 12px;
+  width: 60%;
+  max-width: 500px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  gap: 30px;
+}
+
+.category-card {
+  background-color: #f8f8f8;
+  padding: 30px;
+  width: 200px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+.footer {
+  background-color: #e23744;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zomato Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Zomato</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Explore</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Find the best restaurants, cafés, and bars</h1>
+    <input type="text" id="searchInput" placeholder="Search for restaurants or cuisines...">
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <div class="category-card">Order Food Online</div>
+    <div class="category-card">Dining Out</div>
+    <div class="category-card">Nightlife</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Zomato Clone. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js">
+    document.getElementById("searchInput").addEventListener("keypress", function(e) {
+  if (e.key === "Enter") {
+    const query = e.target.value;
+    alert("Searching for: " + query);
+    // You can integrate actual search logic here
+  }
+});
+
+  </script>
+</body>
+</html>
+
+</body>
+</html>
